@@ -1,0 +1,21 @@
+nav ul{
+   display: flex;
+}
+nav ul li{
+    display: flex;
+    flex-direction: column;
+}
+#down:focus ~ .hide{ /* brother */
+    display: flex;
+    flex-direction: column;
+}
+.down:focus > .features{ /* son */
+    transform: rotate(180deg);
+}
+.show{
+    display: flex;
+}
+
+.none{
+    display: none;
+}
