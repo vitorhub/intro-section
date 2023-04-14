@@ -13,18 +13,20 @@
 .hambclose {
     display: none;
 }
-.snapmobile{
+
+.snapmobile {
     display: none;
 }
 
 @media(max-width: 900px) {
-    .snapmobile{
+    .snapmobile {
         display: flex;
         position: absolute;
         left: 15%;
         top: 20px;
         font-size: 4vw;
     }
+
     .hambopen {
         display: flex;
         position: absolute;
@@ -46,9 +48,10 @@
         top: 0;
         height: 100vh;
         width: 300px;
-        background-color: aqua;
+        background-color: #FFF;
         z-index: 0;
     }
+
     .menuopen ul {
         margin-top: 200px;
         margin-left: 30px;
@@ -57,15 +60,17 @@
         flex-direction: column;
     }
 
-
     .menuclose {
         display: none;
     }
-    
+
     .show {
         display: flex;
         position: relative;
         top: 10px;
+    }
+    .show a:hover{
+        background-color: #b9b6b6;
     }
 
     .none {
@@ -91,7 +96,8 @@
         /* son */
         transform: rotate(180deg);
     }
-    .careers{
+
+    .careers {
         position: relative;
     }
 

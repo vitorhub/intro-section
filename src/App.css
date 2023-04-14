@@ -33,7 +33,6 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    background-color: blue;
 }
 .centro{
     display: flex;
@@ -45,7 +44,6 @@ body {
     display: flex;
     width: 50%;
     height: 100%;
-    background-color: crimson;
     padding: 40px;
     justify-content: space-around;
     flex-direction: column;
@@ -54,18 +52,26 @@ body {
     font-size: 6vw;
 }
 .left p{
-    font-size: 3vw;
+    font-size: 2vw;
     margin: auto;
-    margin-bottom: 5vh;
-    margin-top: 5vh;
+    
 }
 .left button{
     width: 200px;
     padding: 15px;
-    font-size: 3vw;
+    font-size: 2vw;
     margin: auto;
     margin-bottom: 10px;
     border-radius: 10px;
+    background-color: #000;
+    color: #FFF;
+    cursor: pointer;
+    transition: background-color 1s;
+}
+.left button:hover{
+    background-color: #FFF;
+    color: #ADADAD;
+    border: 1px solid #000;
 }
 .base{
     display: flex;
@@ -78,7 +84,6 @@ body {
 }
 .right{
     width: auto;
-    background-color: coral;
     aspect-ratio: 960/1280;
     background-image: url('./assets/images/image-hero-desktop.png');
     background-repeat: no-repeat;
@@ -91,6 +96,9 @@ body {
         gap: 20px;
         text-align: center;
         margin: auto;
+    }
+    .left p{
+        font-size: 3vw;
     }
     .right{
         margin: auto;
@@ -120,5 +128,8 @@ body {
     }
     .centro{
         width: 100%;
+    }
+    .left button{
+        font-size: 3vw;
     }
 }

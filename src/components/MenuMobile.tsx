@@ -18,9 +18,11 @@ export default function Menu() {
 
     const handleToggle = () => {
         setActive(!isActive);
+        setActiveB(false)
     };
     const handleToggleB = () => {
         setActiveB(!isActiveB);
+        setActive(false)
     };
 
     const openHamb = () => {
