@@ -1,0 +1,124 @@
+/* modelo reset */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+}
+
+/* fim modelo reset */
+
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: blue;
+}
+.centro{
+    display: flex;
+    height: 80%;
+    margin: auto;
+    justify-content: center;
+}
+.left{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    background-color: crimson;
+    padding: 40px;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.left h1{
+    font-size: 6vw;
+}
+.left p{
+    font-size: 3vw;
+    margin: auto;
+    margin-bottom: 5vh;
+    margin-top: 5vh;
+}
+.left button{
+    width: 200px;
+    padding: 15px;
+    font-size: 3vw;
+    margin: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.base{
+    display: flex;
+    gap: 10px;
+    margin: auto;
+}
+.base img{
+    align-self: flex-start;
+    width: 25%;
+}
+.right{
+    width: auto;
+    background-color: coral;
+    aspect-ratio: 960/1280;
+    background-image: url('./assets/images/image-hero-desktop.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+@media(max-width: 900px){
+    
+    .left{
+        width: 90%;
+        gap: 20px;
+        text-align: center;
+        margin: auto;
+    }
+    .right{
+        margin: auto;
+        width: 90%;
+        aspect-ratio: 750/564;
+        background-image: url('./assets/images/image-hero-mobile.png');
+    }
+    .centro{
+        flex-direction: column;
+        flex-flow: column-reverse;
+        margin-top: 10vh;
+        text-align: center;
+    }
+    .container{
+        height: fit-content;
+    }
+    .base{
+        margin-top: 70px;
+    }
+}
+@media(max-width: 535px){
+    .left{
+        width: 90%;
+    }
+    .rigth{
+        width: 90%;
+    }
+    .centro{
+        width: 100%;
+    }
+}

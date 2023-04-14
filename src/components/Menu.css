@@ -1,21 +1,86 @@
-nav ul{
+.menudesk{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.menudesk ul{
    display: flex;
 }
-nav ul li{
+.menudesk ul li{
     display: flex;
     flex-direction: column;
 }
-#down:focus ~ .hide{ /* brother */
+.snap{
+    font-size: 4vw;
+}
+
+.setaup{ transform: rotate(0deg); margin-left: 10px; }
+.setadown{ transform: rotate(180deg); margin-left: 10px; }
+.setabup{ transform: rotate(0deg); margin-left: 10px; }
+.setabdown{ transform: rotate(180deg); margin-left: 10px; }
+
+.menudesk ul{
+    width: 40%;
+    background-color: chocolate;
+}
+.lifeatures{
+    width: 30%;
+    background-color: aqua;
+    font-size: 2vw;
+}
+.licompany{
+    width: 30%;
+    font-size: 2vw;
+    background-color:aquamarine ;
+}
+
+.careersabout{
+    background-color: goldenrod;
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    justify-content: space-evenly;
+    width: 40%;
+    font-size: 2vw;
 }
-.down:focus > .features{ /* son */
-    transform: rotate(180deg);
+.careersabout li a{
+    text-align: center;
 }
+
+.loginregister{
+    display: flex;
+    width: 15%;
+    background-color: cornflowerblue;
+    justify-content: space-between;
+}
+
 .show{
     display: flex;
+    background-color: red;
+    flex-direction: column;
+    position: absolute;
+    top: 40px;
+    gap: 20px;
+}
+.login{
+    width: 100px;
+    background-color: chartreuse;
+    cursor: pointer;
+}
+.register{
+    width: 100px;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
 .none{
     display: none;
+}
+@media(max-width: 900px){
+    .menudesk{
+        display: none;
+    }
 }

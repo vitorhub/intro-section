@@ -1,0 +1,105 @@
+.menuopen {
+    display: none;
+}
+
+.menuclose {
+    display: none;
+}
+
+.hambopen {
+    display: none;
+}
+
+.hambclose {
+    display: none;
+}
+.snapmobile{
+    display: none;
+}
+
+@media(max-width: 900px) {
+    .snapmobile{
+        display: flex;
+        position: absolute;
+        left: 15%;
+        top: 20px;
+        font-size: 4vw;
+    }
+    .hambopen {
+        display: flex;
+        position: absolute;
+        right: 50px;
+        top: 30px;
+        align-self: flex-start;
+        z-index: 1;
+        cursor: pointer;
+    }
+
+    .hambclose {
+        display: none;
+    }
+
+    .menuopen {
+        display: flex;
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        width: 300px;
+        background-color: aqua;
+        z-index: 0;
+    }
+    .menuopen ul {
+        margin-top: 200px;
+        margin-left: 30px;
+        gap: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .menuclose {
+        display: none;
+    }
+    
+    .show {
+        display: flex;
+        position: relative;
+        top: 10px;
+    }
+
+    .none {
+        display: none;
+    }
+
+    .setaup {
+        /* son */
+        transform: rotate(0deg);
+    }
+
+    .setadown {
+        /* son */
+        transform: rotate(180deg);
+    }
+
+    .setabup {
+        /* son */
+        transform: rotate(0deg);
+    }
+
+    .setabdown {
+        /* son */
+        transform: rotate(180deg);
+    }
+    .careers{
+        position: relative;
+    }
+
+    .login {
+        display: none;
+    }
+
+    .register {
+        display: none;
+    }
+}
