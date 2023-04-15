@@ -14,10 +14,10 @@
     font-size: 4vw;
 }
 
-.setaup{ transform: rotate(0deg); margin-left: 10px; }
-.setadown{ transform: rotate(180deg); margin-left: 10px; }
-.setabup{ transform: rotate(0deg); margin-left: 10px; }
-.setabdown{ transform: rotate(180deg); margin-left: 10px; }
+.setaup{ transform: rotate(0deg); margin-left: 15px; }
+.setadown{ transform: rotate(180deg); margin-left: 15px; }
+.setabup{ transform: rotate(0deg); margin-left: 15px; }
+.setabdown{ transform: rotate(180deg); margin-left: 15px; }
 
 .menudesk ul{
     width: 40%;
